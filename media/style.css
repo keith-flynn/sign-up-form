@@ -18,6 +18,7 @@ section {
   margin-top: 25vh;
   background-color: black;
   opacity: 70%;
+  padding: 15px;
 }
 
 .hero-text {
@@ -34,16 +35,56 @@ section p {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-.right-frame {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.right-top,
-form,
-.right-bottom {
+main>div {
   min-height: 32vh;
+  padding: 30px;
+}
+
+.right-top>p,
+legend {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-top>p {
+  padding-bottom: 25px;
+  font-weight: 550;
+}
+
+.right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-right: 60px;
+}
+
+label {
+  
+}
+
+input {
+  max-width: 200px;
+  max-height: 15px;
+  border-radius: 5px;  /* This made borders thicker */
+  padding: 5px;
+
+}
+
+.right-bottom {
+  background-color: rgb(254, 254, 243);
 }
