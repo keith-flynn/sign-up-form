@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+section {
+  background-image: url(./nebula.jpg);
+  text-align: center;
+  min-width: 40vw;
+}
+
+.hero-text-bg {
+  margin-top: 25vh;
+  background-color: black;
+  opacity: 70%;
+}
+
+.hero-text {
+  color: white;
+  font-size: 3rem;
+  opacity: 100%;
+}
+
+section p {
+  font-size: 0.9rem;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-top,
+form,
+.right-bottom {
+  min-height: 32vh;
+}
