@@ -1,5 +1,6 @@
 :root {
-  --bottom-right: rgb(254, 254, 243)
+  --bottom-right: rgb(254, 254, 243);
+  --box-shadow: rgb(242, 242, 196);
 }
 
 * {
@@ -33,7 +34,7 @@ section {
 }
 
 section p {
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: white;
 }
 
@@ -72,16 +73,22 @@ legend {
 
 #form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  box-shadow: 5px 5px 3px rgb(242, 242, 196);
+  box-shadow: 5px 5px 3px var(--box-shadow);
   position: relative; /* for box-shadow visibility */
 }
 
 .inner-form {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-left: -25px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 100%;
 }
 
 .input-wrapper {
@@ -90,18 +97,31 @@ legend {
 }
 
 label {
-  font-size: 0.7rem;
+  font-size: .63rem;
   text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 input {
   max-width: 200px;
   max-height: 15px;
-  border-radius: 5px;  /* This made borders thicker */
+  border: solid 1px var(--box-shadow);
+  border-radius: 5px;  /*   This made borders thicker */
   padding: 5px;
   float: table;
 }
 
 .right-bottom {
   background-color: var(--bottom-right);
+}
+
+.right-bottom>button {
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: olivedrab;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
