@@ -33,9 +33,12 @@ section {
   opacity: 100%;
 }
 
-section p {
+.photo-credit {
   font-size: .9rem;
   color: white;
+  position: fixed;
+  bottom: 10px;
+  left: 45px;
 }
 
 main {
@@ -109,6 +112,15 @@ input {
   border-radius: 5px;  /*   This made borders thicker */
   padding: 5px;
   float: table;
+}
+
+input:focus {
+  outline: solid 1px rgb(56, 56, 231);
+  box-shadow: 1px 1px 2px 2px gray;
+}
+
+input:invalid {
+  border: solid 2px red;
 }
 
 .right-bottom {
