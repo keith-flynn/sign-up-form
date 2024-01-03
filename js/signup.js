@@ -8,6 +8,3 @@ function checkPasswords() {
     return;
   }
 }
-
-// test
-let test = "test";
