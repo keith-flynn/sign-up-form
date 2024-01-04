@@ -137,3 +137,7 @@ input:invalid {
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
+.mismatch {
+  outline: solid 1px rgb(177, 46, 46);
+}
