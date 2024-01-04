@@ -69,6 +69,7 @@ legend {
 }
 
 .right-top {
+  background-color: var(--bottom-right);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -121,6 +122,14 @@ input:focus {
 
 input:invalid {
   border: solid 2px red;
+}
+
+#mismatch-text {
+  color: red;
+  font-size: .63rem;
+  margin-top: -55px;
+  margin-left: 10px;
+  display: none;
 }
 
 .right-bottom {

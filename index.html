@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sign in page for wingnut form">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="./media/style.css">
-    <script src="https://kit.fontawesome.com/448a650cba.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <section>
-      <div class="hero-text-bg">
-        <div class="hero-text"><h1><i class="fa-solid fa-user-astronaut"></i>wingnut</h1></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in page for wingnut form">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="./media/style.css">
+  <script src="https://kit.fontawesome.com/448a650cba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section>
+    <div class="hero-text-bg">
+      <div class="hero-text">
+        <h1><i class="fa-solid fa-user-astronaut"></i>wingnut</h1>
       </div>
-      <p class="photo-credit">Photo by Hubble Telescope courtesy of <a href="https://esahubble.org/images/heic1105a/" target="_blank">NASA/ESA</a></p>
-    </section>
+    </div>
+    <p class="photo-credit">Photo by Hubble Telescope courtesy of <a href="https://esahubble.org/images/heic1105a/"
+        target="_blank">NASA/ESA</a></p>
+  </section>
 
-    <main>
-        <div class="right-top">
-          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-          <p>You <em>know</em> you want to.</p>
+  <main>
+    <div class="right-top">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <div id="form">
+      <legend>Let's do this!</legend>
+      <div class="inner-form">
+        <div class="input-wrapper">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name">
         </div>
-        <div id="form">
-          <legend>Let's do this!</legend>
-          <div class="inner-form">
-            <div class="input-wrapper">
-              <label for="first_name">First Name</label>
-              <input type="text" id="first_name">
-            </div>
-            <div class="input-wrapper">
-              <label for="last_name">Last Name</label>
-              <input type="text" id="last_name">
-            </div>
-            <div class="input-wrapper">
-              <label for="email">Email</label>
-              <input type="email" id="email">
-            </div>
-            <div class="input-wrapper">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone">
+        <div class="input-wrapper">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name">
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone">
 
-            </div>
-            <div class="input-wrapper">
-              <label for="password1">Passsword</label>
-              <input type="text" id="password1">
-            </div>
-            <div class="input-wrapper">
-              <label for="password2">Confirm Password</label>
-              <input type="text" id="password2">
-          </div>
-          </div>
         </div>
-        <div class="right-bottom">
-          <button type="button" id="create">Create Account</button>
-          <p>Already have an account? Log in</p>
-        </div>   
-    </main>
-    
-    <script src="./js/signup.js"></script>
-  </body>
+        <div class="input-wrapper">
+          <label for="password1">Passsword</label>
+          <input type="text" id="password1">
+        </div>
+        <div class="input-wrapper">
+          <label for="password2">Confirm Password</label>
+          <input type="text" id="password2">
+        </div>
+      </div>
+      <p id="mismatch-text">* Passwords do not match</p>
+    </div>
+    <div class="right-bottom">
+      <button type="button" id="create">Create Account</button>
+      <p>Already have an account? Log in</p>
+    </div>
+  </main>
+
+  <script src="./js/signup.js"></script>
+</body>
+
 </html>
