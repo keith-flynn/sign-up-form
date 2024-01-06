@@ -12,4 +12,5 @@ function checkPasswords() {
   }
 }
 
+// Create Account button event listener
 createButton.addEventListener("click", checkPasswords);
