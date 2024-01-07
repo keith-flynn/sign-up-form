@@ -147,6 +147,6 @@ input:invalid {
   margin-bottom: 30px;
 }
 
-.mismatch {
+.mismatch { /* when fields are non-matching */
   outline: solid 1px rgb(177, 46, 46);
 }
